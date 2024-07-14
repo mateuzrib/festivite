@@ -1,0 +1,24 @@
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+textarea {
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  padding: 1rem;
+  background-color: var(--input-base);
+  font: var(--body-md);
+  outline: none;
+}
+
+textarea:focus {
+  color: var(--text-heading);
+  border-color: var(--brand-light);
+}
+
+textarea::placeholder {
+  font: var(--body-md);
+  color: var(--input-placeholder);
+}

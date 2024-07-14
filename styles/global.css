@@ -41,7 +41,7 @@
   --heading-sm: 700 1.125rem var(--font-family-ballon);
 
   --font-family-open-sans: "Open Sans", sans-serif;
-  --body-md: 300 1rem var(--font-family-open-sans);
+  --body-md: 400 1rem var(--font-family-open-sans);
   --body-sm: 400 .875rem var(--font-family-open-sans);
   --body-xs: 400 .75rem var(--font-family-open-sans);
 }
@@ -57,4 +57,8 @@ body {
   
   padding: 1.25rem;
   background-color: var(--shape-background);
+}
+
+.flex {
+  display: flex;
 }

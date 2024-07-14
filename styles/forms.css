@@ -1,0 +1,33 @@
+@import url(fields/index.css);
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1rem;
+
+  legend {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+  }
+}
+
+fieldset > header {
+  align-items: center;
+  gap: .75rem;
+
+  .calendar {
+    color: var(--input-placeholder);
+  }
+}
+
+fieldset header > i {
+  fill: var(--input-placeholder);
+  background-color: var(--input-placeholder);
+  color: var(--input-placeholder);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}

@@ -1,0 +1,38 @@
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
+input {
+  height: 3rem;
+  padding: 1rem;
+
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  outline: none;
+
+  background-color: var(--input-base);
+
+  font: var(--body-md);
+  color: var(--input-placeholder);
+}
+
+input:focus {
+  color: var(--text-heading);
+  border-color: var(--brand-light);
+}
+
+input::placeholder {
+  font: var(--body-md);
+  color: var(--input-placeholder);
+}
+
+.dual {
+  gap: 1rem;
+}
+
+
+
+
+
+

@@ -27,9 +27,72 @@
       <!-- MAIN-CONTAINER START -->
       <div class="main-container">
         <h2>Create your invite</h2>
-
+        
         <form>
-          <div class="about-event"></div>
+          <fieldset class="about-event">
+            <header class="flex">
+              <i data-lucide="calendar" class="calendar"></i>
+              <legend>About the event</legend>
+            </header>
+
+            <div class="input-wrapper">
+              <label for="event-name">Title</label>
+              <input type="text" id="event-name" name="event-name" placeholder="Event name">
+            </div>
+
+            <div class="flex dual">
+              <div class="input-wrapper">
+                <label for="start-date">Start</label>
+                <input type="datetime-local" id="start-date" name="start-date">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="end-date">End</label>
+                <input type="datetime-local" id="end-date" name="end-date">
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="input-wrapper flex">
+                <label>Type</label>
+
+                <div class="radio-wrapper flex">
+                  <div class="radio-inner">
+                    <label for="type-onsite">
+                      <i data-lucide="building-2" class="icon"></i>
+                      <input type="radio" id="type-onsite" name="event-shift" value="onsite" checked>
+                      Onsite
+                    </label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <label for="type-online">
+                      <i data-lucide="video" class="icon"></i>
+                      <input type="radio" id="type-online" name="event-shift" value="online">
+                      Online
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="site">Address</label>
+                <input type="text" id="site" name="site" placeholder="Link or address">
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="event-description">Description</label>
+              <textarea 
+                name="event-description" 
+                id="event-description" 
+                cols="30" rows="5" 
+                placeholder="Enter details about the event">
+              </textarea>
+            </div>
+
+          </fieldset>
+
           <div class="personalize"></div>
           <div class="contact-data"></div>
           <div class="agreements"></div>
@@ -38,5 +101,10 @@
       <!-- MAIN-CONTAINER END -->
     </main>
   </div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
