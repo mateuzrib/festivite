@@ -29,7 +29,7 @@
         <h2>Create your invite</h2>
         
         <form>
-          <fieldset class="about-event flex-1">
+          <fieldset class="about-event">
             <header class="flex">
               <i data-lucide="calendar" class="header-icon"></i>
               <legend>About the event</legend>
@@ -305,7 +305,7 @@
                 <label for="toggle">
                   <div class="toggle-image"></div>
                   <input type="checkbox" id="toggle" name="style">
-                  <span>Dark</span>
+                  <span id="toggle-text">Dark</span>
                 </label>
               </div>
 
@@ -328,14 +328,72 @@
 
           </fieldset>
 
-          <div class="contact-data"></div>
-          <div class="agreements"></div>
+          <fieldset class="contact-data">
+            <header class="flex">
+              <i data-lucide="contact" class="header-icon"></i>
+              <legend>Contact data</legend>
+            </header>
+
+            <div class="input-wrapper">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Full name">
+            </div>
+
+            <div class="flex grid">
+              <div class="input-wrapper">
+                <label for="email">Start</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">End</label>
+                <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="agreements">
+
+            <div class="terms-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">
+                I have read and agree to the <span>Terms and Conditions</span> and the 
+                <span>Privacy Policy</span>.
+              </label>
+            </div>
+            <div class="terms-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" id="agree-emails" name="agree-emails" required>
+              <label for="agree-emails">
+                I agree to receive updates and promotions via email.
+              </label>
+            </div>
+            <div class="terms-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" id="agree-sms" name="agree-sms" required>
+              <label for="agree-sms">
+                I agree to receive updates and promotions via SMS.
+              </label>
+            </div>
+
+          </fieldset>
+
+          <fieldset class="action">
+            <div>
+              <button>
+                <i data-lucide="ticket" class="icon"></i>
+                Create invite
+              </button>
+            </div>
+          </fieldset>
         </form>
       </div>
       <!-- MAIN-CONTAINER END -->
     </main>
   </div>
 
+  <script src="js/main.js"></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script>
     lucide.createIcons();

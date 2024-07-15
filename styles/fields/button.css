@@ -1,0 +1,19 @@
+.action {
+  margin-left: auto;
+
+  & button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    width: 11rem;
+    height: 3rem;
+    border: none;
+    border-radius: .5rem;
+
+    font: var(--body-md);
+    color: var(--text-heading);
+    background-color: var(--brand-dark);
+    cursor: pointer;
+  }
+}

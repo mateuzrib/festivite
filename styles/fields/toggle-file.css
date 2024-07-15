@@ -21,6 +21,10 @@
       background-image: url("../../assets/images/toggle-on.svg");
       background-repeat: no-repeat;
     }
+
+    & span {
+      content: "as";
+    }
   }
 
   & label:nth-child(2) {
