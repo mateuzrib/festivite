@@ -53,21 +53,23 @@
 
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
   gap: .75rem;
-
-  justify-content: center;
-  align-items: center;
 
   & label {
     cursor: pointer;
   }
 
-  & .back-circle {
+  & .item {
     display: flex;
-    align-items: center;
+    place-content: center;
+  } 
+
+  & .back-circle {
+    display: grid;
+    align-content: center;
     justify-content: center;
-    width: 40px;
+    width: 40px;  
     height: 40px;
   
     border-radius: 50%;
@@ -84,6 +86,38 @@
   }
 }
 
+.items-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.875rem, 1fr));
+  gap: .5rem;
 
+  & .item {
+    padding: 5px;
+    text-align: center;
+    background-color: var(--shape-button);
+    border: 2px solid var(--input-stroke);
+    border-radius: 0.5rem;
+
+    &:has(:checked) {
+      border-color: var(--brand-light);
+    }
+  }
+
+  & input {
+    display: none;
+  }
+
+  & label {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    cursor: pointer;
+  }
+
+  & p {
+    font: var(--body-sm);
+    color: var(--text-heading);
+  }
+}
 
 
