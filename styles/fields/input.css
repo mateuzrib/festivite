@@ -15,6 +15,24 @@ input {
 
   font: var(--body-md);
   color: var(--input-placeholder);
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font: var(--body-sm);
+    color: var(--danger);
+
+    & .icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+
+  &:valid + .error {
+    display: none;
+  }
 }
 
 input:focus {
@@ -26,3 +44,4 @@ input::placeholder {
   font: var(--body-md);
   color: var(--input-placeholder);
 }
+

@@ -16,4 +16,8 @@
     background-color: var(--brand-dark);
     cursor: pointer;
   }
+
+  & button:hover {
+    background-color: var(--brand-mid);
+  }
 }
