@@ -51,5 +51,39 @@
   }
 }
 
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 2fr));
+  gap: .75rem;
+
+  justify-content: center;
+  align-items: center;
+
+  & label {
+    cursor: pointer;
+  }
+
+  & .back-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-color: var(--shape-button);
+
+    & input {
+      display: none;
+    }
+
+    &:has(:checked) {
+      border-color: var(--brand-light);
+    }
+  }
+}
+
+
 
 

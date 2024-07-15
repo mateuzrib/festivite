@@ -62,3 +62,7 @@ body {
 .flex {
   display: flex;
 }
+
+.header-icon {
+  color: var(--input-placeholder);
+}

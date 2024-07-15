@@ -29,9 +29,9 @@
         <h2>Create your invite</h2>
         
         <form>
-          <fieldset class="about-event">
+          <fieldset class="about-event flex-1">
             <header class="flex">
-              <i data-lucide="calendar" class="calendar"></i>
+              <i data-lucide="calendar" class="header-icon"></i>
               <legend>About the event</legend>
             </header>
 
@@ -40,7 +40,7 @@
               <input type="text" id="event-name" name="event-name" placeholder="Event name">
             </div>
 
-            <div class="flex dual">
+            <div class="flex grid">
               <div class="input-wrapper">
                 <label for="start-date">Start</label>
                 <input type="datetime-local" id="start-date" name="start-date">
@@ -93,7 +93,122 @@
 
           </fieldset>
 
-          <div class="personalize"></div>
+          <fieldset class="personalize">
+            <header class="flex">
+              <i data-lucide="paintbrush-vertical" class="header-icon"></i>
+              <legend>Personalization</legend>
+            </header>
+
+            <div class="input-area"></div>
+
+            <div class="input-wrapper">
+              <label>Colors</label>
+
+              <div class="items">
+
+                <div class="item">
+                  <label for="brand-light">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-1.png" alt="">
+                      <input type="radio" id="brand-light" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="navy">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-2.png" alt="">
+                      <input type="radio" id="navy" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="purple">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-3.png" alt="">
+                      <input type="radio" id="purple" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="fuschia">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-4.png" alt="">
+                      <input type="radio" id="fuschia" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="pink">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-5.png" alt="">
+                      <input type="radio" id="pink" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="danger">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-6.png" alt="">
+                      <input type="radio" id="danger" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="orange">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-7.png" alt="">
+                      <input type="radio" id="orange" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="yellow">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-8.png" alt="">
+                      <input type="radio" id="yellow" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="lime">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-9.png" alt="">
+                      <input type="radio" id="lime" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="item">
+                  <label for="green">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-10.png" alt="">
+                      <input type="radio" id="green" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+                
+                <div class="item">
+                  <label for="cyan">
+                    <div class="back-circle">
+                      <img src="assets/icons/Circle-11.png" alt="">
+                      <input type="radio" id="cyan" name="color-selection" st>
+                    </div>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+          </fieldset>
+
           <div class="contact-data"></div>
           <div class="agreements"></div>
         </form>

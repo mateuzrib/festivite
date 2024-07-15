@@ -51,24 +51,20 @@ aside {
 
 main {
   overflow: auto;
-  display: grid;
-  justify-content: center;
-
   padding: 5rem;
     
   background-color: var(--shape-body);
   border-radius: .75rem;
 
   .main-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
     max-width: 35rem;
+    margin-inline: auto;
   }
 
   h2 {  
     font: var(--heading-md);
     color: var(--text-heading);
+    margin-bottom: 2.5rem;
   }
 }
 

@@ -1,5 +1,16 @@
 @import url(fields/index.css);
 
+/*  */
+form {
+  display: flex;
+  flex-direction: column;
+}
+/*  */
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
+
 fieldset {
   border: none;
   display: grid;
@@ -14,10 +25,6 @@ fieldset {
 fieldset > header {
   align-items: center;
   gap: .75rem;
-
-  .calendar {
-    color: var(--input-placeholder);
-  }
 }
 
 fieldset header > i {

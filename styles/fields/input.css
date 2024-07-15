@@ -26,13 +26,3 @@ input::placeholder {
   font: var(--body-md);
   color: var(--input-placeholder);
 }
-
-.dual {
-  gap: 1rem;
-}
-
-
-
-
-
-
