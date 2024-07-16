@@ -1,12 +1,5 @@
 @import url(fields/index.css);
 
-/*  */
-form {
-  display: flex;
-  flex-direction: column;
-}
-/*  */
-
 fieldset + fieldset {
   margin-top: 3rem;
 }

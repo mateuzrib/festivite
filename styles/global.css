@@ -63,6 +63,10 @@ body {
   display: flex;
 }
 
+.col {
+  flex-direction: column;
+}
+
 .header-icon {
   color: var(--input-placeholder);
 }
